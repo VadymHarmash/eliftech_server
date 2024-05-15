@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 connectDB()
 
-app.get('/events', eventController.getEvents)
-app.post('/events/:eventId/participants', eventController.addParticipant);
+app.get('https://eliftech-server-f72u.onrender.com/events', eventController.getEvents)
+app.post('https://eliftech-server-f72u.onrender.com/events/:eventId/participants', eventController.addParticipant);
 
 app.listen(PORT, (err) => err ? console.log(err) : console.log(`Listening port ${PORT}`))
